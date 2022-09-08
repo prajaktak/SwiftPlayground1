@@ -119,10 +119,6 @@ var periodicElements: [String: String]
 //Dictionary of Int keys and String values
 var employees:[Int: String]
 
-//Closure example
-let ageSortedBooks = allBooks.sorted{
-    return ($0.readingAge <= $1.readingAge)
-}
 
 
 
