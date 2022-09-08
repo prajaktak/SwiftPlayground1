@@ -96,7 +96,10 @@ ageSortedBooks
 let shortestToLongest = allBooks.sorted{ $0.pageCount <= $1.pageCount }
 shortestToLongest
 
-let nameSortedBooks = allBooks.sorted(by: ){ $0.title < = $1.title }
+let nameSortedBooks = allBooks.sorted{ $0.title <= $1.title }
 nameSortedBooks
 
+// create a filtered array
+let booksForUnder10s = allBooks.filter{ $0.readingAge < 10 }
+booksForUnder10s
 
