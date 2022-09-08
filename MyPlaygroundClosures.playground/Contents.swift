@@ -93,4 +93,10 @@ let allBooks = [book1, book2, book3, book4, book5]
 let ageSortedBooks = allBooks.sorted{ $0.readingAge <= $1.readingAge }
 ageSortedBooks
 
+let shortestToLongest = allBooks.sorted{ $0.pageCount <= $1.pageCount }
+shortestToLongest
+
+let nameSortedBooks = allBooks.sorted(by: ){ $0.title < = $1.title }
+nameSortedBooks
+
 
